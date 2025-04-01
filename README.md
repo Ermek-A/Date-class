@@ -26,7 +26,7 @@ java Main
 ### 3️ Enter Input
 You will be prompted to enter the number of dates, followed by individual date entries.
 
-Example:
+#### Example Input:
 ```
 Enter the number of dates to process: 3
 
@@ -46,15 +46,33 @@ Month: 2
 Year: 2024
 ```
 
+#### Example Java Code:
+```java
+Date date1 = new Date(15, 8, 2022);
+Date date2 = new Date(1, 1, 2023);
+Date date3 = new Date(29, 2, 2024); // Leap year support
+
+System.out.println("Day of the week for date1: " + date1.getDayOfWeek());
+System.out.println("Difference in days between date1 and date2: " + date1.calculateDifference(date2));
+```
+
 ---
 
 ##  Additional Notes & Challenges
 - **Leap Year Handling**: The program correctly identifies leap years and allows February 29 in such cases.
 - **Sorting**: Dates are sorted using `Collections.sort()` based on the `Comparable<Date>` interface.
 - **Exception Handling**: Invalid inputs (like February 30) are caught and handled gracefully.
+- **Sorting Example:**
+```java
+List<Date> dateList = new ArrayList<>();
+dateList.add(date1);
+dateList.add(date2);
+dateList.add(date3);
+Collections.sort(dateList);
+```
 - **Improvements**: Future versions could include time support, different date formats, and more advanced date operations.
 
 ---
 
-📌 **Developed in Java, ensuring accuracy and efficiency in date operations!** 🚀
+ **Developed in Java, ensuring accuracy and efficiency in date operations!** 🚀
 
