@@ -1,6 +1,6 @@
 # Java Date Management System
 
-## 📌 Project Overview
+##  Project Overview
 This project is a simple Java program that allows users to:
 - Enter multiple dates dynamically.
 - Validate and store dates.
@@ -12,18 +12,18 @@ The program ensures proper date validation, considering leap years and invalid d
 
 ---
 
-## 🛠 Compilation and Execution
-### 1️⃣ Compile the program
+##  Compilation and Execution
+### 1️ Compile the program
 Ensure you have Java installed, then open the terminal and run:
 ```sh
 javac Main.java
 ```
-### 2️⃣ Run the program
+### 2️ Run the program
 Execute the compiled program with:
 ```sh
 java Main
 ```
-### 3️⃣ Enter Input
+### 3️ Enter Input
 You will be prompted to enter the number of dates, followed by individual date entries.
 
 Example:
@@ -48,7 +48,7 @@ Year: 2024
 
 ---
 
-## 🔍 Additional Notes & Challenges
+##  Additional Notes & Challenges
 - **Leap Year Handling**: The program correctly identifies leap years and allows February 29 in such cases.
 - **Sorting**: Dates are sorted using `Collections.sort()` based on the `Comparable<Date>` interface.
 - **Exception Handling**: Invalid inputs (like February 30) are caught and handled gracefully.
